@@ -179,7 +179,7 @@ const monstersInYourPocket = [{
 */
 
 //Code Here
-let myStrongest = monstersInYourPocket.filter()
+let myStrongest = monstersInYourPocket.filter(elem => elem.CP > 200)
 
 ////////// PROBLEM 5 //////////
 
@@ -231,7 +231,11 @@ const orders = [{
   Use a higher order method to get all the order totals after adding in the sales tax (given to you as a tax rate, hint: you'll need to do some multiplication). Your answer should be an array of numbers, one total for each order.
 */
 
-let orderTotals; // Code here
+let orderTotals = orders.map(function (arr) {
+  let eachItem = arr.price * arr.tax
+  let withTax = eachItem + arr.price
+  return withTax
+})
 
 ////////// PROBLEM 6 //////////
 
@@ -323,4 +327,8 @@ const purchases = [{
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal; //Code Here
+let bobsTotal = purchases.filter(function (elem) {
+  return elem.owner === 'Bob'
+}).reduce(function (total, purchases) {
+  return purchases.price + total
+}, 0)
