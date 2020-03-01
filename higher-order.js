@@ -21,7 +21,7 @@ const mixedNumbers = [6, 3, 1, 7, 5, 2, 6, 8, 9, 4, 2, 7, 9, 3, 1, 8, 4, 3];
 */
 
 //Code Here
-let evenNumbers = mixedNumbers.filter(function(x) {
+let evenNumbers = mixedNumbers.filter(function (x) {
   return x % 2 === 0;
 });
 
@@ -44,7 +44,7 @@ const prices = [15.0, 23.0, 78.0, 34.0, 12.0, 86.0, 12.0, 79.0, 32.0];
 */
 
 //Code Here
-let postTaxPrices = prices.map(function(x) {
+let postTaxPrices = prices.map(function (x) {
   return x * 1.07;
 });
 
@@ -68,32 +68,106 @@ let totalPopulation = populations.reduce((total, elem) => total + elem);
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-const monstersInYourPocket = [
-  { monster: "Bulbabunny", CP: 156 },
-  { monster: "Bulbabunny", CP: 135 },
-  { monster: "Bulbabunny", CP: 250 },
-  { monster: "Ponylopse", CP: 277 },
-  { monster: "Ponylopse", CP: 184 },
-  { monster: "Pikadoughnet", CP: 207 },
-  { monster: "Bulbabunny", CP: 139 },
-  { monster: "Pikadoughnet", CP: 47 },
-  { monster: "Pikadoughnet", CP: 175 },
-  { monster: "WaterHorsia", CP: 26 },
-  { monster: "Ponylopse", CP: 19 },
-  { monster: "Pikadoughnet", CP: 218 },
-  { monster: "Charaflier", CP: 101 },
-  { monster: "WaterHorsia", CP: 96 },
-  { monster: "Pikadoughnet", CP: 253 },
-  { monster: "Sandmush", CP: 146 },
-  { monster: "Bulbabunny", CP: 247 },
-  { monster: "Charaflier", CP: 55 },
-  { monster: "Bulbabunny", CP: 72 },
-  { monster: "Pikadoughnet", CP: 300 },
-  { monster: "Sandmush", CP: 262 },
-  { monster: "Sandmush", CP: 25 },
-  { monster: "Charaflier", CP: 215 },
-  { monster: "Ponylopse", CP: 125 },
-  { monster: "Bulbabunny", CP: 178 }
+const monstersInYourPocket = [{
+    monster: "Bulbabunny",
+    CP: 156
+  },
+  {
+    monster: "Bulbabunny",
+    CP: 135
+  },
+  {
+    monster: "Bulbabunny",
+    CP: 250
+  },
+  {
+    monster: "Ponylopse",
+    CP: 277
+  },
+  {
+    monster: "Ponylopse",
+    CP: 184
+  },
+  {
+    monster: "Pikadoughnet",
+    CP: 207
+  },
+  {
+    monster: "Bulbabunny",
+    CP: 139
+  },
+  {
+    monster: "Pikadoughnet",
+    CP: 47
+  },
+  {
+    monster: "Pikadoughnet",
+    CP: 175
+  },
+  {
+    monster: "WaterHorsia",
+    CP: 26
+  },
+  {
+    monster: "Ponylopse",
+    CP: 19
+  },
+  {
+    monster: "Pikadoughnet",
+    CP: 218
+  },
+  {
+    monster: "Charaflier",
+    CP: 101
+  },
+  {
+    monster: "WaterHorsia",
+    CP: 96
+  },
+  {
+    monster: "Pikadoughnet",
+    CP: 253
+  },
+  {
+    monster: "Sandmush",
+    CP: 146
+  },
+  {
+    monster: "Bulbabunny",
+    CP: 247
+  },
+  {
+    monster: "Charaflier",
+    CP: 55
+  },
+  {
+    monster: "Bulbabunny",
+    CP: 72
+  },
+  {
+    monster: "Pikadoughnet",
+    CP: 300
+  },
+  {
+    monster: "Sandmush",
+    CP: 262
+  },
+  {
+    monster: "Sandmush",
+    CP: 25
+  },
+  {
+    monster: "Charaflier",
+    CP: 215
+  },
+  {
+    monster: "Ponylopse",
+    CP: 125
+  },
+  {
+    monster: "Bulbabunny",
+    CP: 178
+  }
 ];
 // Do not edit the code above.
 
@@ -105,22 +179,51 @@ const monstersInYourPocket = [
 */
 
 //Code Here
-let myStrongest = monstersInYourPocket.filter();
+let myStrongest = monstersInYourPocket.filter()
 
 ////////// PROBLEM 5 //////////
 
 // Do not edit code below.
-const orders = [
-  { price: 15, tax: 0.09 },
-  { price: 42, tax: 0.07 },
-  { price: 56, tax: 0.11 },
-  { price: 80, tax: 0.11 },
-  { price: 69, tax: 0.06 },
-  { price: 68, tax: 0.14 },
-  { price: 72, tax: 0.14 },
-  { price: 51, tax: 0.09 },
-  { price: 89, tax: 0.15 },
-  { price: 48, tax: 0.13 }
+const orders = [{
+    price: 15,
+    tax: 0.09
+  },
+  {
+    price: 42,
+    tax: 0.07
+  },
+  {
+    price: 56,
+    tax: 0.11
+  },
+  {
+    price: 80,
+    tax: 0.11
+  },
+  {
+    price: 69,
+    tax: 0.06
+  },
+  {
+    price: 68,
+    tax: 0.14
+  },
+  {
+    price: 72,
+    tax: 0.14
+  },
+  {
+    price: 51,
+    tax: 0.09
+  },
+  {
+    price: 89,
+    tax: 0.15
+  },
+  {
+    price: 48,
+    tax: 0.13
+  }
 ];
 // Do not edit code above.
 
@@ -133,27 +236,86 @@ let orderTotals; // Code here
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-const purchases = [
-  { owner: "Barry", price: 103 },
-  { owner: "Bob", price: 75 },
-  { owner: "Bob", price: 73 },
-  { owner: "Barry", price: 57 },
-  { owner: "Barry", price: 128 },
-  { owner: "Bob", price: 119 },
-  { owner: "Barry", price: 133 },
-  { owner: "Barry", price: 27 },
-  { owner: "Barry", price: 138 },
-  { owner: "Bob", price: 68 },
-  { owner: "Bob", price: 50 },
-  { owner: "Barry", price: 9 },
-  { owner: "Bob", price: 123 },
-  { owner: "Bob", price: 135 },
-  { owner: "Barry", price: 30 },
-  { owner: "Barry", price: 129 },
-  { owner: "Barry", price: 38 },
-  { owner: "Bob", price: 133 },
-  { owner: "Barry", price: 109 },
-  { owner: "Bob", price: 115 }
+const purchases = [{
+    owner: "Barry",
+    price: 103
+  },
+  {
+    owner: "Bob",
+    price: 75
+  },
+  {
+    owner: "Bob",
+    price: 73
+  },
+  {
+    owner: "Barry",
+    price: 57
+  },
+  {
+    owner: "Barry",
+    price: 128
+  },
+  {
+    owner: "Bob",
+    price: 119
+  },
+  {
+    owner: "Barry",
+    price: 133
+  },
+  {
+    owner: "Barry",
+    price: 27
+  },
+  {
+    owner: "Barry",
+    price: 138
+  },
+  {
+    owner: "Bob",
+    price: 68
+  },
+  {
+    owner: "Bob",
+    price: 50
+  },
+  {
+    owner: "Barry",
+    price: 9
+  },
+  {
+    owner: "Bob",
+    price: 123
+  },
+  {
+    owner: "Bob",
+    price: 135
+  },
+  {
+    owner: "Barry",
+    price: 30
+  },
+  {
+    owner: "Barry",
+    price: 129
+  },
+  {
+    owner: "Barry",
+    price: 38
+  },
+  {
+    owner: "Bob",
+    price: 133
+  },
+  {
+    owner: "Barry",
+    price: 109
+  },
+  {
+    owner: "Bob",
+    price: 115
+  }
 ];
 // Do not edit the code above.
 
