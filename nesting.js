@@ -51,14 +51,15 @@ var employees = [{
 
 //Code Here
 function employeeUpdater() {
-  for (i = 0; i < arr.length; i++) {
-    if (firstName === 'Theo') {
-      delete entire object
-    } else if (firstName === 'Lorie') {
-      department = 'HR'
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i]['firstName'] === 'Theo') {
+      employees.splice(i, 1)
+    }
+    if (employees[i]['firstName'] === 'Lorie') {
+      employees[i]['department'] = 'HR'
     }
   }
-  return arr
+  return employees
 }
 
 
@@ -78,11 +79,37 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-function removeDuplicates(arr) {
+// function removeDuplicates() {
+//   let removed = []
+//   let count = 0
+//   let start = false
 
+//   for (i = 0; i < workplaceAccidents.length; i++) {
+//     for (b = 0; b < removed.length; b++) {
+//       if (workplaceAccidents[i] == removed[b]) {
+//         start = true;
+//       }
+//     }
+//     count++;
+//     if (count == 1 && start == false) {
+//       removed.push(workplaceAccidents[i]);
+//     }
+//     start = false;
+//     count = 0;
+//   }
+//   return removed
+// }
+
+function removeDuplicates() {
+  for (let i = 0; i < workplaceAccidents.length; i++) {
+    for (let j = i + 1; j < workplaceAccidents.length; j++) {
+      if (workplaceAccidents[i] === workplaceAccidents[j]) {
+        workplaceAccidents.splice(j, 1);
+      }
+    }
+  }
+  return workplaceAccidents;
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -108,8 +135,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1]
+var fluffy2ndFriend = cat.catFriends[1].name
 
 
 
@@ -149,6 +176,14 @@ var myCar = {
 */
 
 //Code Here
+function recordCleaner() {
+  for (i = 0; i < myCar.accidents.length; i++) {
+    if (myCar.accidents[i].atFaultForAccident === true) {
+      myCar.accidents[i].atFaultForAccident = false
+    }
+  }
+  return myCar
+}
 
 
 
@@ -172,3 +207,15 @@ var numsArr = [
 */
 
 //Code Here
+function looper() {
+  for (let i = 0; i < numsArr.length; i++) {
+    for (let j = 0; j < numsArr[i].length; j++) {
+      if (numsArr[i][j] % 2 === 0) {
+        numsArr[i][j] = 'even';
+      } else {
+        numsArr[i][j] = 'odd';
+      }
+    }
+  }
+  return numsArr
+}

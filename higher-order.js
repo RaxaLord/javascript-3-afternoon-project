@@ -329,6 +329,8 @@ const purchases = [{
 
 let bobsTotal = purchases.filter(function (elem) {
   return elem.owner === 'Bob'
+  // Above filtered for only elements with Bob
 }).reduce(function (total, purchases) {
   return purchases.price + total
 }, 0)
+// then using reduce, went and added all his prices into a new array
